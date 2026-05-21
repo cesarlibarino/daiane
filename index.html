@@ -1,1 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ana Paula Matos | Nutricionista Funcional e Integrativa</title>
 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            serif: ['Cinzel', 'serif'],
+          },
+          colors: {
+            nutri: {
+              sage: '#5F7A61', /* Verde sálvia focado em saúde integrativa e fitoterapia */
+              pink: '#D47589', /* Rosa suave inspirado na vitalidade da pitaya */
+              pinkHover: '#C05C72',
+              lightBg: '#F7F9F6', /* Fundo claro, leve e natural */
+              dark: '#2C3E2E',
+              slate: '#556B58'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #F7F9F6; color: #2C3E2E; overflow-x: hidden; }
+    
+    .btn-premium {
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(212, 117, 137, 0.3);
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+    .faq-item.active .faq-answer {
+      max-height: 200px;
+    }
+    .faq-item.active .faq-icon {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="bg-white/90 backdrop-blur-md sticky top-0 w-full z-50 border-b border-nutri-sage/10">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="font-serif text-base md:text-xl tracking-wider text-nutri-dark font-medium">
+        ANA PAULA MATOS <span class="font-sans text-[9px] block tracking-widest text-nutri-pink font-bold uppercase mt-0.5">Nutrição Funcional • CRN9 11470</span>
+      </div>
+      <a href="https://api.whatsapp.com/message/VCKOHID5HDTYJ1?autoload=1&app_absent=0&utm_source=ig" target="_blank" class="btn-premium bg-nutri-sage text-white px-5 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase">
+        Vagas Limitadas
+      </a>
+    </div>
+  </header>
+
+  <section class="py-20 md:py-28 bg-gradient-to-b from-white to-nutri-lightBg relative">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-7 space-y-6">
+        <span class="inline-flex items-center gap-2 text-nutri-sage bg-nutri-sage/10 px-4 py-1.5 rounded-full font-bold text-xs uppercase tracking-widest">
+          <i data-lucide="flower" class="w-3.5 h-3.5 text-nutri-pink"></i> Tratamento Integrativo e Individualizado
+        </span>
+        <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl text-nutri-dark leading-[1.2] font-normal">
+          Desinflame seu corpo e <br><span class="italic text-nutri-pink font-medium">conquiste leveza real e duradoura.</span>
+        </h1>
+        <p class="text-base md:text-lg text-nutri-slate max-w-xl leading-relaxed font-medium">
+          Trate a raiz das dores da Endometriose, regule seus hormônios e emagreça de forma definitiva com o método VIVA LEVE. Um acompanhamento focado na saúde da mulher e na fitoterapia funcional.
+        </p>
+        <div class="pt-4">
+          <a href="https://api.whatsapp.com/send?phone=5532985014263&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20como%20funciona%20sua%20consultoria%3F" target="_blank" class="btn-premium inline-flex items-center gap-3 bg-nutri-pink text-white px-10 py-4 rounded-full font-bold text-sm tracking-wide shadow-md">
+            <i data-lucide="calendar" class="w-4 h-4 text-white"></i> Agendar Minha Consulta Individual
+          </a>
+        </div>
+      </div>
+      
+      <div class="md:col-span-5 relative">
+        <div class="absolute -inset-3 border border-nutri-pink/30 rounded-2xl transform translate-x-2 translate-y-2 -z-10"></div>
+        <img src="img/anapaulamatos.webp" alt="Ana Paula Matos - Nutricionista Funcional" class="rounded-2xl w-full aspect-[4/5] object-cover shadow-xl bg-white"
+             onerror="this.src='https://images.unsplash.com/photo-1594824813573-246434de83fb?q=80&w=1374&auto=format&fit=crop';">
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-widest text-nutri-pink font-bold">Escute o seu corpo</span>
+        <h2 class="font-serif text-3xl md:text-4xl text-nutri-dark mt-2">Você sente que seu organismo está trabalhando contra você?</h2>
+        <div class="w-12 h-0.5 bg-nutri-pink mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 bg-nutri-lightBg rounded-xl border border-nutri-sage/5">
+          <i data-lucide="droplet" class="w-8 h-8 text-nutri-pink mb-4"></i>
+          <h3 class="font-bold text-nutri-dark mb-2">Dores e Cólicas</h3>
+          <p class="text-xs text-nutri-slate leading-relaxed font-medium">Desconfortos intensos e inflamações silenciosas causadas pelo estresse e pela Endometriose.</p>
+        </div>
+        <div class="p-6 bg-nutri-lightBg rounded-xl border border-nutri-sage/5">
+          <i data-lucide="sparkles" class="w-8 h-8 text-nutri-pink mb-4"></i>
+          <h3 class="font-bold text-nutri-dark mb-2">Inchaço Abdominal</h3>
+          <p class="text-xs text-nutri-slate leading-relaxed font-medium">Aquela sensação constante de peso e distensão, mesmo comendo pouca quantidade ao longo do dia.</p>
+        </div>
+        <div class="p-6 bg-nutri-lightBg rounded-xl border border-nutri-sage/5">
+          <i data-lucide="battery-low" class="w-8 h-8 text-nutri-pink mb-4"></i>
+          <h3 class="font-bold text-nutri-dark mb-2">Cansaço Crônico</h3>
+          <p class="text-xs text-nutri-slate leading-relaxed font-medium">Falta de energia logo pela manhã e oscilações bruscas de humor devido ao desequilíbrio hormonal.</p>
+        </div>
+        <div class="p-6 bg-nutri-lightBg rounded-xl border border-nutri-sage/5">
+          <i data-lucide="scale" class="w-8 h-8 text-nutri-pink mb-4"></i>
+          <h3 class="font-bold text-nutri-dark mb-2">Efeito Sanfona</h3>
+          <p class="text-xs text-nutri-slate leading-relaxed font-medium">Dificuldade crônica para perder peso e mantê-lo devido a dietas genéricas e restritivas demais.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-nutri-lightBg">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="grid md:grid-cols-12 gap-12 items-center">
+        <div class="md:col-span-5 space-y-4">
+          <span class="text-xs uppercase tracking-widest text-nutri-pink font-bold">Sua Nova Jornada</span>
+          <h2 class="font-serif text-3xl md:text-4xl text-nutri-dark leading-tight">O Caminho para uma Vida Leve</h2>
+          <p class="text-sm text-nutri-slate font-medium leading-relaxed">
+            Não é sobre passar fome ou cortar o que você gosta. Nosso foco é usar a Nutrição Funcional e a Fitoterapia para devolver o equilíbrio natural e a saúde ao seu organismo:
+          </p>
+        </div>
+        <div class="md:col-span-7 space-y-6">
+          <div class="bg-white p-6 rounded-xl border border-nutri-sage/10 flex gap-4 items-start">
+            <div class="bg-nutri-sage/5 text-nutri-sage p-2.5 rounded-lg"><i data-lucide="leaf" class="w-5 h-5 text-nutri-pink"></i></div>
+            <div>
+              <h4 class="font-bold text-nutri-dark">Fitoterapia Funcional Ativa</h4>
+              <p class="text-xs text-nutri-slate mt-1 font-medium leading-relaxed">Utilização estratégica de compostos naturais, plantas medicinais e chás específicos para modular a inflamação e otimizar as funções metabólicas.</p>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-xl border border-nutri-sage/10 flex gap-4 items-start">
+            <div class="bg-nutri-sage/5 text-nutri-sage p-2.5 rounded-lg"><i data-lucide="heart-pulse" class="w-5 h-5 text-nutri-pink"></i></div>
+            <div>
+              <h4 class="font-bold text-nutri-dark">Modulação para Saúde da Mulher</h4>
+              <p class="text-xs text-nutri-slate mt-1 font-medium leading-relaxed">Conduta nutricional totalmente personalizada para aliviar sintomas de Endometriose, SOP, TPM severa e restabelecer sua harmonia hormonal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center space-y-6">
+      <span class="font-serif text-xs uppercase tracking-widest text-nutri-pink font-bold">Sua Nutricionista</span>
+      <h2 class="font-serif text-3xl md:text-4xl text-nutri-dark">Ana Paula Matos</h2>
+      <p class="text-base text-nutri-slate max-w-2xl mx-auto leading-relaxed font-medium">
+        Sou Nutricionista Funcional (CRN9 11470) especialista em Nutrição Esportiva, Fitoterapia e Saúde da Mulher. Criadora do método VIVA LEVE, trabalho com um modelo de atendimento humanizado focado em desinflamar o organismo de forma profunda. Minha missão técnica é te ensinar a escutar seu corpo, proporcionando estratégias eficientes para você atingir seu peso ideal sem sofrimento, tratando dores e resgatando sua verdadeira autoestima.
+      </p>
+      <div class="text-xs text-nutri-dark font-bold tracking-wider uppercase pt-2">
+        <i data-lucide="check-circle" class="w-3.5 h-3.5 inline mr-1 text-nutri-pink"></i> Atendimento de Alta Performance On-line e Presencial
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-nutri-lightBg">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="font-serif text-2xl md:text-3xl text-nutri-dark">Dúvidas Frequentes</h2>
+        <div class="w-12 h-0.5 bg-nutri-pink mx-auto mt-3"></div>
+      </div>
+
+      <div class="space-y-4">
+        <div class="faq-item bg-white p-5 rounded-xl border border-nutri-sage/10 cursor-pointer" onclick="toggleFaq(this)">
+          <div class="flex justify-between items-center">
+            <h4 class="font-bold text-sm text-nutri-dark">Como funciona o atendimento On-line?</h4>
+            <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-nutri-pink transition-transform"></i>
+          </div>
+          <p class="faq-answer text-xs text-nutri-slate mt-3 font-medium leading-relaxed">A consulta on-line possui a mesma profundidade da presencial. Analisamos seus exames, rotina, sinais clínicos e objetivos por videochamada. Seu plano alimentar e protocolo fitoterápico são entregues diretamente no seu celular.</p>
+        </div>
+
+        <div class="faq-item bg-white p-5 rounded-xl border border-nutri-sage/10 cursor-pointer" onclick="toggleFaq(this)">
+          <div class="flex justify-between items-center">
+            <h4 class="font-bold text-sm text-nutri-dark">O plano serve para quem tem diagnóstico de Endometriose?</h4>
+            <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-nutri-pink transition-transform"></i>
+          </div>
+          <p class="faq-answer text-xs text-nutri-slate mt-3 font-medium leading-relaxed">Com certeza. A estratégia é desenhada especificamente com alimentos e fitoterápicos de propriedades anti-inflamatórias potentes, focando na redução drástica das dores e do inchaço pélvico.</p>
+        </div>
+
+        <div class="faq-item bg-white p-5 rounded-xl border border-nutri-sage/10 cursor-pointer" onclick="toggleFaq(this)">
+          <div class="flex justify-between items-center">
+            <h4 class="font-bold text-sm text-nutri-dark">Vou precisar comprar alimentos caros ou raros?</h4>
+            <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-nutri-pink transition-transform"></i>
+          </div>
+          <p class="faq-answer text-xs text-nutri-slate mt-3 font-medium leading-relaxed">Não. Minha conduta preza pela nutrição real e prática. Baseamos o plano em comida de verdade, facilmente encontrada em feiras e supermercados comuns, ajustada perfeitamente ao seu orçamento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-nutri-dark text-white text-center relative overflow-hidden">
+    <div class="max-w-3xl mx-auto px-6 relative z-10 space-y-8">
+      <h2 class="font-serif text-3xl md:text-5xl leading-tight font-normal">Dê o primeiro passo rumo à sua melhor versão.</h2>
+      <p class="text-emerald-100/80 text-sm md:text-base max-w-xl mx-auto font-medium leading-relaxed">
+        Clique abaixo e fale comigo diretamente no WhatsApp para entender os formatos de consultoria e agendar seu atendimento exclusivo.
+      </p>
+      <div>
+        <a href="https://api.whatsapp.com/send?phone=5532985014263&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20como%20funciona%20sua%20consultoria%3F" target="_blank" class="btn-premium inline-flex items-center gap-3 bg-nutri-pink text-white px-12 py-4.5 rounded-full font-bold text-sm tracking-wide shadow-xl">
+          <i data-lucide="message-circle" class="w-5 h-5 text-white"></i> Quero Agendar Minha Consultoria
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-12 bg-white text-center text-nutri-slate text-[10px] font-medium tracking-wider uppercase border-t border-nutri-sage/10">
+    <p>© 2026 Ana Paula Matos — Nutrição Funcional Integrativa — Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    function toggleFaq(element) {
+      const isActive = element.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('active'));
+      if (!isActive) {
+        element.classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>
