@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ana Paula Matos | Nutricionista Funcional e Integrativa</title>
+  <title>Daiane Pedrosa | Nutricionista Clínica e Esportiva</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 
   <script>
     tailwind.config = {
@@ -19,12 +19,11 @@
           },
           colors: {
             nutri: {
-              sage: '#5F7A61', /* Verde sálvia focado em saúde integrativa e fitoterapia */
-              pink: '#D47589', /* Rosa suave inspirado na vitalidade da pitaya */
-              pinkHover: '#C05C72',
-              lightBg: '#F7F9F6', /* Fundo claro, leve e natural */
-              dark: '#2C3E2E',
-              slate: '#556B58'
+              orange: '#FF5733', /* Laranja focado em energia, esporte e ação */
+              orangeHover: '#E04E2E',
+              lightBg: '#F8F9FA', /* Fundo claro, limpo e focado em clínica */
+              dark: '#1A2421', /* Grafite premium ultra escuro */
+              slate: '#4A5754' /* Cinza de apoio para textos */
             }
           }
         }
@@ -34,36 +33,30 @@
 
   <style>
     * { margin:0; padding:0; box-sizing:border-box; }
-    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #F7F9F6; color: #2C3E2E; overflow-x: hidden; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #F8F9FA; color: #1A2421; overflow-x: hidden; }
     
     .btn-premium {
       transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     }
     .btn-premium:hover {
       transform: translateY(-2px);
-      box-shadow: 0 12px 24px rgba(212, 117, 137, 0.3);
+      box-shadow: 0 12px 24px rgba(255, 87, 51, 0.3);
     }
     .faq-answer {
       max-height: 0;
       overflow: hidden;
       transition: max-height 0.3s ease-out;
     }
-    .faq-item.active .faq-answer {
-      max-height: 200px;
-    }
-    .faq-item.active .faq-icon {
-      transform: rotate(180deg);
-    }
   </style>
 </head>
 <body>
 
-  <header class="bg-white/90 backdrop-blur-md sticky top-0 w-full z-50 border-b border-nutri-sage/10">
+  <header class="bg-white/90 backdrop-blur-md sticky top-0 w-full z-50 border-b border-nutri-dark/5">
     <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
-      <div class="font-serif text-base md:text-xl tracking-wider text-nutri-dark font-medium">
-        ANA PAULA MATOS <span class="font-sans text-[9px] block tracking-widest text-nutri-pink font-bold uppercase mt-0.5">Nutrição Funcional • CRN9 11470</span>
+      <div class="font-serif text-base md:text-xl tracking-wider text-nutri-dark font-bold">
+        DAIANE PEDROSA <span class="font-sans text-[9px] block tracking-widest text-nutri-orange font-bold uppercase mt-0.5">Nutrição Clínica & Esportiva • Ed. Física</span>
       </div>
-      <a href="https://api.whatsapp.com/message/VCKOHID5HDTYJ1?autoload=1&app_absent=0&utm_source=ig" target="_blank" class="btn-premium bg-nutri-sage text-white px-5 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase">
+      <a href="https://api.whatsapp.com/send?phone=5532985014263&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20como%20funciona%20sua%20consultoria%3F" target="_blank" class="btn-premium bg-nutri-dark text-white px-5 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase">
         Vagas Limitadas
       </a>
     </div>
@@ -71,27 +64,27 @@
 
   <section class="py-20 md:py-28 bg-gradient-to-b from-white to-nutri-lightBg relative">
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
-      <div class="md:col-span-7 space-y-6">
-        <span class="inline-flex items-center gap-2 text-nutri-sage bg-nutri-sage/10 px-4 py-1.5 rounded-full font-bold text-xs uppercase tracking-widest">
-          <i data-lucide="flower" class="w-3.5 h-3.5 text-nutri-pink"></i> Tratamento Integrativo e Individualizado
+      <div class="md:col-span-7 space-y-6 order-2 md:order-1">
+        <span class="inline-flex items-center gap-2 text-nutri-dark bg-nutri-dark/5 px-4 py-1.5 rounded-full font-bold text-xs uppercase tracking-widest">
+          <i data-lucide="dumbbell" class="w-3.5 h-3.5 text-nutri-orange"></i> Nutrição + Educação Física
         </span>
-        <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl text-nutri-dark leading-[1.2] font-normal">
-          Desinflame seu corpo e <br><span class="italic text-nutri-pink font-medium">conquiste leveza real e duradoura.</span>
+        <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl text-nutri-dark leading-[1.2] font-bold">
+          Conquiste a sua melhor versão <br><span class="italic text-nutri-orange font-medium">comendo o que você gosta.</span>
         </h1>
         <p class="text-base md:text-lg text-nutri-slate max-w-xl leading-relaxed font-medium">
-          Trate a raiz das dores da Endometriose, regule seus hormônios e emagreça de forma definitiva com o método VIVA LEVE. Um acompanhamento focado na saúde da mulher e na fitoterapia funcional.
+          Chega de dietas restritivas que sugam a sua energia. Descubra como alinhar uma nutrição de alta performance aos seus treinos para queimar gordura, ganhar massa magra e transformar o seu corpo com liberdade.
         </p>
         <div class="pt-4">
-          <a href="https://api.whatsapp.com/send?phone=5532985014263&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20como%20funciona%20sua%20consultoria%3F" target="_blank" class="btn-premium inline-flex items-center gap-3 bg-nutri-pink text-white px-10 py-4 rounded-full font-bold text-sm tracking-wide shadow-md">
-            <i data-lucide="calendar" class="w-4 h-4 text-white"></i> Agendar Minha Consulta Individual
+          <a href="https://api.whatsapp.com/send?phone=5532985014263&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20como%20funciona%20sua%20consultoria%3F" target="_blank" class="btn-premium inline-flex items-center gap-3 bg-nutri-orange hover:bg-nutri-orangeHover text-white px-8 md:px-10 py-4 rounded-full font-bold text-sm tracking-wide shadow-md">
+            <i data-lucide="calendar" class="w-4 h-4 text-white"></i> Agendar Minha Consultoria
           </a>
         </div>
       </div>
       
-      <div class="md:col-span-5 relative">
-        <div class="absolute -inset-3 border border-nutri-pink/30 rounded-2xl transform translate-x-2 translate-y-2 -z-10"></div>
-        <img src="img/anapaulamatos.webp" alt="Ana Paula Matos - Nutricionista Funcional" class="rounded-2xl w-full aspect-[4/5] object-cover shadow-xl bg-white"
-             onerror="this.src='https://images.unsplash.com/photo-1594824813573-246434de83fb?q=80&w=1374&auto=format&fit=crop';">
+      <div class="md:col-span-5 relative order-1 md:order-2">
+        <div class="absolute -inset-3 border border-nutri-orange/30 rounded-2xl transform translate-x-2 translate-y-2 -z-10"></div>
+        <img src="img/daianepedrosa.webp" alt="Daiane Pedrosa - Nutricionista Esportiva" class="rounded-2xl w-full aspect-[4/5] object-cover shadow-xl bg-white"
+             onerror="this.src='https://images.unsplash.com/photo-1548690312-e3b507d8c110?q=80&w=1374&auto=format&fit=crop';">
       </div>
     </div>
   </section>
@@ -99,31 +92,31 @@
   <section class="py-24 bg-white">
     <div class="max-w-5xl mx-auto px-6">
       <div class="text-center max-w-2xl mx-auto mb-16">
-        <span class="text-xs uppercase tracking-widest text-nutri-pink font-bold">Escute o seu corpo</span>
-        <h2 class="font-serif text-3xl md:text-4xl text-nutri-dark mt-2">Você sente que seu organismo está trabalhando contra você?</h2>
-        <div class="w-12 h-0.5 bg-nutri-pink mx-auto mt-4"></div>
+        <span class="text-xs uppercase tracking-widest text-nutri-orange font-bold">Chega de Sofrimento</span>
+        <h2 class="font-serif text-3xl md:text-4xl text-nutri-dark mt-2">Você se identifica com algum desses obstáculos?</h2>
+        <div class="w-12 h-0.5 bg-nutri-orange mx-auto mt-4"></div>
       </div>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="p-6 bg-nutri-lightBg rounded-xl border border-nutri-sage/5">
-          <i data-lucide="droplet" class="w-8 h-8 text-nutri-pink mb-4"></i>
-          <h3 class="font-bold text-nutri-dark mb-2">Dores e Cólicas</h3>
-          <p class="text-xs text-nutri-slate leading-relaxed font-medium">Desconfortos intensos e inflamações silenciosas causadas pelo estresse e pela Endometriose.</p>
+        <div class="p-6 bg-nutri-lightBg rounded-xl border border-nutri-dark/5">
+          <i data-lucide="ban" class="w-8 h-8 text-nutri-orange mb-4"></i>
+          <h3 class="font-bold text-nutri-dark mb-2">Restrições Severas</h3>
+          <p class="text-xs text-nutri-slate leading-relaxed font-medium">Achar que para emagrecer ou definir você precisa cortar o arroz, o pão e tudo o que te dá prazer na rotina.</p>
         </div>
-        <div class="p-6 bg-nutri-lightBg rounded-xl border border-nutri-sage/5">
-          <i data-lucide="sparkles" class="w-8 h-8 text-nutri-pink mb-4"></i>
-          <h3 class="font-bold text-nutri-dark mb-2">Inchaço Abdominal</h3>
-          <p class="text-xs text-nutri-slate leading-relaxed font-medium">Aquela sensação constante de peso e distensão, mesmo comendo pouca quantidade ao longo do dia.</p>
+        <div class="p-6 bg-nutri-lightBg rounded-xl border border-nutri-dark/5">
+          <i data-lucide="trending-down" class="w-8 h-8 text-nutri-orange mb-4"></i>
+          <h3 class="font-bold text-nutri-dark mb-2">Treinar e Não Ver Evolução</h3>
+          <p class="text-xs text-nutri-slate leading-relaxed font-medium">Se matar na academia de domingo a domingo, mas continuar sem a definição muscular que você deseja.</p>
         </div>
-        <div class="p-6 bg-nutri-lightBg rounded-xl border border-nutri-sage/5">
-          <i data-lucide="battery-low" class="w-8 h-8 text-nutri-pink mb-4"></i>
-          <h3 class="font-bold text-nutri-dark mb-2">Cansaço Crônico</h3>
-          <p class="text-xs text-nutri-slate leading-relaxed font-medium">Falta de energia logo pela manhã e oscilações bruscas de humor devido ao desequilíbrio hormonal.</p>
+        <div class="p-6 bg-nutri-lightBg rounded-xl border border-nutri-dark/5">
+          <i data-lucide="zap-off" class="w-8 h-8 text-nutri-orange mb-4"></i>
+          <h3 class="font-bold text-nutri-dark mb-2">Cansaço no Treino</h3>
+          <p class="text-xs text-nutri-slate leading-relaxed font-medium">Falta de rendimento, força e energia durante o treino por não saber como fazer um pré e pós-treino estratégico.</p>
         </div>
-        <div class="p-6 bg-nutri-lightBg rounded-xl border border-nutri-sage/5">
-          <i data-lucide="scale" class="w-8 h-8 text-nutri-pink mb-4"></i>
+        <div class="p-6 bg-nutri-lightBg rounded-xl border border-nutri-dark/5">
+          <i data-lucide="refresh-cw" class="w-8 h-8 text-nutri-orange mb-4"></i>
           <h3 class="font-bold text-nutri-dark mb-2">Efeito Sanfona</h3>
-          <p class="text-xs text-nutri-slate leading-relaxed font-medium">Dificuldade crônica para perder peso e mantê-lo devido a dietas genéricas e restritivas demais.</p>
+          <p class="text-xs text-nutri-slate leading-relaxed font-medium">Seguir protocolos genéricos da internet que funcionam por duas semanas, mas são impossíveis de manter.</p>
         </div>
       </div>
     </div>
@@ -133,25 +126,25 @@
     <div class="max-w-5xl mx-auto px-6">
       <div class="grid md:grid-cols-12 gap-12 items-center">
         <div class="md:col-span-5 space-y-4">
-          <span class="text-xs uppercase tracking-widest text-nutri-pink font-bold">Sua Nova Jornada</span>
-          <h2 class="font-serif text-3xl md:text-4xl text-nutri-dark leading-tight">O Caminho para uma Vida Leve</h2>
+          <span class="text-xs uppercase tracking-widest text-nutri-orange font-bold">O Método de Transformação</span>
+          <h2 class="font-serif text-3xl md:text-4xl text-nutri-dark leading-tight">Como Alcançar Seus Resultados</h2>
           <p class="text-sm text-nutri-slate font-medium leading-relaxed">
-            Não é sobre passar fome ou cortar o que você gosta. Nosso foco é usar a Nutrição Funcional e a Fitoterapia para devolver o equilíbrio natural e a saúde ao seu organismo:
+            Unindo a ciência da Nutrição Clínica e Esportiva ao entendimento prático da Educação Física, o meu acompanhamento foca em gerar resultados estéticos e de saúde reais, sem que você precise deixar de comer o que ama.
           </p>
         </div>
         <div class="md:col-span-7 space-y-6">
-          <div class="bg-white p-6 rounded-xl border border-nutri-sage/10 flex gap-4 items-start">
-            <div class="bg-nutri-sage/5 text-nutri-sage p-2.5 rounded-lg"><i data-lucide="leaf" class="w-5 h-5 text-nutri-pink"></i></div>
+          <div class="bg-white p-6 rounded-xl border border-nutri-dark/5 flex gap-4 items-start">
+            <div class="bg-nutri-orange/5 text-nutri-orange p-2.5 rounded-lg flex-shrink-0"><i data-lucide="utensils" class="w-5 h-5 text-nutri-orange"></i></div>
             <div>
-              <h4 class="font-bold text-nutri-dark">Fitoterapia Funcional Ativa</h4>
-              <p class="text-xs text-nutri-slate mt-1 font-medium leading-relaxed">Utilização estratégica de compostos naturais, plantas medicinais e chás específicos para modular a inflamação e otimizar as funções metabólicas.</p>
+              <h4 class="font-bold text-nutri-dark">Plano Alimentar Flexível e Calculado</h4>
+              <p class="text-xs text-nutri-slate mt-1 font-medium leading-relaxed">Esqueça folhas de alface e frango seco. Seus macronutrientes serão calculados com precisão para incluir alimentos que você gosta, encaixados de forma estratégica no seu dia.</p>
             </div>
           </div>
-          <div class="bg-white p-6 rounded-xl border border-nutri-sage/10 flex gap-4 items-start">
-            <div class="bg-nutri-sage/5 text-nutri-sage p-2.5 rounded-lg"><i data-lucide="heart-pulse" class="w-5 h-5 text-nutri-pink"></i></div>
+          <div class="bg-white p-6 rounded-xl border border-nutri-dark/5 flex gap-4 items-start">
+            <div class="bg-nutri-orange/5 text-nutri-orange p-2.5 rounded-lg flex-shrink-0"><i data-lucide="activity" class="w-5 h-5 text-nutri-orange"></i></div>
             <div>
-              <h4 class="font-bold text-nutri-dark">Modulação para Saúde da Mulher</h4>
-              <p class="text-xs text-nutri-slate mt-1 font-medium leading-relaxed">Conduta nutricional totalmente personalizada para aliviar sintomas de Endometriose, SOP, TPM severa e restabelecer sua harmonia hormonal.</p>
+              <h4 class="font-bold text-nutri-dark">Sinergia Perfeita entre Dieta e Treino</h4>
+              <p class="text-xs text-nutri-slate mt-1 font-medium leading-relaxed">Ajustes finos no seu consumo de energia baseados no seu gasto calórico real nos treinos de força ou aeróbicos, acelerando a queima de gordura e a hipertrofia.</p>
             </div>
           </div>
         </div>
@@ -161,13 +154,13 @@
 
   <section class="py-24 bg-white">
     <div class="max-w-4xl mx-auto px-6 text-center space-y-6">
-      <span class="font-serif text-xs uppercase tracking-widest text-nutri-pink font-bold">Sua Nutricionista</span>
-      <h2 class="font-serif text-3xl md:text-4xl text-nutri-dark">Ana Paula Matos</h2>
+      <span class="font-serif text-xs uppercase tracking-widest text-nutri-orange font-bold">Sua Próxima Mentora</span>
+      <h2 class="font-serif text-3xl md:text-4xl text-nutri-dark">Daiane Pedrosa</h2>
       <p class="text-base text-nutri-slate max-w-2xl mx-auto leading-relaxed font-medium">
-        Sou Nutricionista Funcional (CRN9 11470) especialista em Nutrição Esportiva, Fitoterapia e Saúde da Mulher. Criadora do método VIVA LEVE, trabalho com um modelo de atendimento humanizado focado em desinflamar o organismo de forma profunda. Minha missão técnica é te ensinar a escutar seu corpo, proporcionando estratégias eficientes para você atingir seu peso ideal sem sofrimento, tratando dores e resgatando sua verdadeira autoestima.
+        Sou Nutricionista Clínica e Esportiva com formação complementar em Educação Física. Com mais de 10 mil seguidores que acompanham minha rotina e insights diários, me dedico a guiar pessoas comuns e atletas rumo ao topo da sua performance física e estética. Meu propósito é provar que para construir um corpo definido, forte e saudável, você não precisa se privar do convívio social ou sofrer com pratos sem graça. Eu te ensino a dominar a sua alimentação.
       </p>
-      <div class="text-xs text-nutri-dark font-bold tracking-wider uppercase pt-2">
-        <i data-lucide="check-circle" class="w-3.5 h-3.5 inline mr-1 text-nutri-pink"></i> Atendimento de Alta Performance On-line e Presencial
+      <div class="text-xs text-nutri-dark font-bold tracking-wider uppercase pt-2 flex items-center justify-center gap-1.5">
+        <i data-lucide="check-circle" class="w-4 h-4 text-nutri-orange flex-shrink-0"></i> Consultoria Premium On-line e Presencial
       </div>
     </div>
   </section>
@@ -176,32 +169,38 @@
     <div class="max-w-3xl mx-auto px-6">
       <div class="text-center mb-12">
         <h2 class="font-serif text-2xl md:text-3xl text-nutri-dark">Dúvidas Frequentes</h2>
-        <div class="w-12 h-0.5 bg-nutri-pink mx-auto mt-3"></div>
+        <div class="w-12 h-0.5 bg-nutri-orange mx-auto mt-3"></div>
       </div>
 
       <div class="space-y-4">
-        <div class="faq-item bg-white p-5 rounded-xl border border-nutri-sage/10 cursor-pointer" onclick="toggleFaq(this)">
+        <div class="faq-item bg-white p-5 rounded-xl border border-nutri-dark/5 cursor-pointer" onclick="toggleFaq(this)">
           <div class="flex justify-between items-center">
-            <h4 class="font-bold text-sm text-nutri-dark">Como funciona o atendimento On-line?</h4>
-            <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-nutri-pink transition-transform"></i>
+            <h4 class="font-bold text-sm text-nutri-dark">Eu realmente posso comer o que gosto no plano?</h4>
+            <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-nutri-orange transition-transform duration-300"></i>
           </div>
-          <p class="faq-answer text-xs text-nutri-slate mt-3 font-medium leading-relaxed">A consulta on-line possui a mesma profundidade da presencial. Analisamos seus exames, rotina, sinais clínicos e objetivos por videochamada. Seu plano alimentar e protocolo fitoterápico são entregues diretamente no seu celular.</p>
+          <div class="faq-answer transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
+            <p class="text-xs text-nutri-slate mt-3 font-medium leading-relaxed">Sim! O segredo está no equilíbrio calórico e na distribuição dos macronutrientes. Eu encaixo alimentos que você sente prazer em comer para que o plano seja sustentável a longo prazo, sem que isso bloqueie seus resultados.</p>
+          </div>
         </div>
 
-        <div class="faq-item bg-white p-5 rounded-xl border border-nutri-sage/10 cursor-pointer" onclick="toggleFaq(this)">
+        <div class="faq-item bg-white p-5 rounded-xl border border-nutri-dark/5 cursor-pointer" onclick="toggleFaq(this)">
           <div class="flex justify-between items-center">
-            <h4 class="font-bold text-sm text-nutri-dark">O plano serve para quem tem diagnóstico de Endometriose?</h4>
-            <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-nutri-pink transition-transform"></i>
+            <h4 class="font-bold text-sm text-nutri-dark">Como funciona a Consultoria On-line?</h4>
+            <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-nutri-orange transition-transform duration-300"></i>
           </div>
-          <p class="faq-answer text-xs text-nutri-slate mt-3 font-medium leading-relaxed">Com certeza. A estratégia é desenhada especificamente com alimentos e fitoterápicos de propriedades anti-inflamatórias potentes, focando na redução drástica das dores e do inchaço pélvico.</p>
+          <div class="faq-answer transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
+            <p class="text-xs text-nutri-slate mt-3 font-medium leading-relaxed">É extremamente completa. Analiso suas fotos para avaliação estética, sua rotina, horários de treino e preferências alimentares. O plano é montado sob medida e entregue no aplicativo com suporte direto para você tirar dúvidas.</p>
+          </div>
         </div>
 
-        <div class="faq-item bg-white p-5 rounded-xl border border-nutri-sage/10 cursor-pointer" onclick="toggleFaq(this)">
+        <div class="faq-item bg-white p-5 rounded-xl border border-nutri-dark/5 cursor-pointer" onclick="toggleFaq(this)">
           <div class="flex justify-between items-center">
-            <h4 class="font-bold text-sm text-nutri-dark">Vou precisar comprar alimentos caros ou raros?</h4>
-            <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-nutri-pink transition-transform"></i>
+            <h4 class="font-bold text-sm text-nutri-dark">Preciso estar treinando pesado para fazer o acompanhamento?</h4>
+            <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-nutri-orange transition-transform duration-300"></i>
           </div>
-          <p class="faq-answer text-xs text-nutri-slate mt-3 font-medium leading-relaxed">Não. Minha conduta preza pela nutrição real e prática. Baseamos o plano em comida de verdade, facilmente encontrada em feiras e supermercados comuns, ajustada perfeitamente ao seu orçamento.</p>
+          <div class="faq-answer transition-all duration-300 ease-in-out max-h-0 overflow-hidden">
+            <p class="text-xs text-nutri-slate mt-3 font-medium leading-relaxed">Não necessariamente. O plano se adapta ao seu nível atual, seja você alguém que está começando a caminhar agora ou quem já treina pesado na musculação. A dieta é desenhada para potencializar o seu momento atual.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -209,30 +208,38 @@
 
   <section class="py-24 bg-nutri-dark text-white text-center relative overflow-hidden">
     <div class="max-w-3xl mx-auto px-6 relative z-10 space-y-8">
-      <h2 class="font-serif text-3xl md:text-5xl leading-tight font-normal">Dê o primeiro passo rumo à sua melhor versão.</h2>
-      <p class="text-emerald-100/80 text-sm md:text-base max-w-xl mx-auto font-medium leading-relaxed">
-        Clique abaixo e fale comigo diretamente no WhatsApp para entender os formatos de consultoria e agendar seu atendimento exclusivo.
+      <h2 class="font-serif text-3xl md:text-5xl leading-tight font-normal">Pronto para destravar a sua melhor versão?</h2>
+      <p class="text-orange-100/80 text-sm md:text-base max-w-xl mx-auto font-medium leading-relaxed">
+        Toque no botão abaixo para falar comigo no WhatsApp, tirar suas dúvidas sobre os planos de consultoria e garantir a sua vaga.
       </p>
       <div>
-        <a href="https://api.whatsapp.com/send?phone=5532985014263&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20como%20funciona%20sua%20consultoria%3F" target="_blank" class="btn-premium inline-flex items-center gap-3 bg-nutri-pink text-white px-12 py-4.5 rounded-full font-bold text-sm tracking-wide shadow-xl">
+        <a href="https://api.whatsapp.com/send?phone=5532985014263&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20como%20funciona%20sua%20consultoria%3F" target="_blank" class="btn-premium inline-flex items-center gap-3 bg-nutri-orange hover:bg-nutri-orangeHover text-white px-10 md:px-12 py-4 rounded-full font-bold text-sm tracking-wide shadow-xl">
           <i data-lucide="message-circle" class="w-5 h-5 text-white"></i> Quero Agendar Minha Consultoria
         </a>
       </div>
     </div>
   </section>
 
-  <footer class="py-12 bg-white text-center text-nutri-slate text-[10px] font-medium tracking-wider uppercase border-t border-nutri-sage/10">
-    <p>© 2026 Ana Paula Matos — Nutrição Funcional Integrativa — Todos os direitos reservados.</p>
+  <footer class="py-12 bg-white text-center text-nutri-slate text-[10px] font-medium tracking-wider uppercase border-t border-nutri-dark/5">
+    <p>© 2026 Daiane Pedrosa — Nutrição Clínica & Esportiva — Todos os direitos reservados.</p>
   </footer>
 
   <script>
     lucide.createIcons();
 
     function toggleFaq(element) {
-      const isActive = element.classList.contains('active');
-      document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('active'));
-      if (!isActive) {
-        element.classList.add('active');
+      const answer = element.querySelector('.faq-answer');
+      const icon = element.querySelector('.faq-icon');
+      
+      if (answer.style.maxHeight && answer.style.maxHeight !== '0px') {
+        answer.style.maxHeight = '0px';
+        icon.style.transform = 'rotate(0deg)';
+      } else {
+        document.querySelectorAll('.faq-answer').forEach(ans => ans.style.maxHeight = '0px');
+        document.querySelectorAll('.faq-icon').forEach(ic => ic.style.transform = 'rotate(0deg)');
+        
+        answer.style.maxHeight = answer.scrollHeight + 'px';
+        icon.style.transform = 'rotate(180deg)';
       }
     }
   </script>
